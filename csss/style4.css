@@ -1,0 +1,15 @@
+/* Add custom styles for the size selector */
+.size-selection {
+    margin-top: 10px;
+}
+
+.size-selection label {
+    font-weight: bold;
+    display: block;
+}
+
+.size-selection select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}

@@ -1,0 +1,519 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    /* Darker header color */
+    color: black;
+    /* Light text for contrast */
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+  }
+
+h1 {
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foodstorage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.foodstorage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    height: auto;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+}
+
+.foodstorage span {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.foodstorage p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.add-to-cart {
+    padding: 0.5em 1em;
+    background-color: #3498db;
+    /* Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #2980b9;
+    /* Darker blue on hover */
+  }
+
+
+.foodstorage:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+        background-color: #444;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+        width: 100%;
+}
+
+
+
+.Knives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Knives {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    height: auto;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.Knives span {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.Knives p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+
+.Knives:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.Lunchbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Lunchbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    height: auto;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.Lunchbox span {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.Lunchbox p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+
+.Lunchbox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.Flask-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Flask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    height: auto;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.Flask span {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.Flask p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+
+.Flask:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.SpiceJars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.SpiceJars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    height: auto;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.SpiceJars span {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.SpiceJars p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+
+.SpiceJars:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+.KitchenTools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.KitchenTools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    height: auto;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.KitchenTools span {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.KitchenTools p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+
+.KitchenTools:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.Vacuumbottles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Vacuumbottles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    height: auto;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.Vacuumbottles span {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.Vacuumbottles p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+
+.Vacuumbottles:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+.Foodstorage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2,150px); */
+    gap: 1em;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.Foodstorage {
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 1em;
+    background-color: #fff;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* text-align: center;
+                                justify-content: center;
+                                height: 250px;
+                                width: 250px; */
+}
+
+.Foodstorage img {
+    /* width: 150px;
+                                height: 150px; */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+    display: block;
+    margin: 0 auto;
+}
+
+.Foodstorage span {
+    margin-top: 5em;
+    display: block;
+    font-weight: bold;
+}
+
+.Foodstorage:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #2C3E50;
+    color: #fff;
+    align-items: center;
+    margin-top: auto;
+}
+
+/* Navbar Style */
+.navbar {
+    background-color: #003366;
+    /* Deep Blue background */
+    margin-bottom: 0;
+    /* Remove bottom margin */
+  }
+  
+  .navbar .navbar-brand {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .navbar .navbar-brand:hover {
+    color: #f8f9fa;
+    /* Light color when hovered */
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: #002240;
+    /* Darker deep blue when hovered */
+    color: white;
+  }
+  
+  .navbar-nav .dropdown-menu {
+    background-color: #003366;
+    /* Same deep blue background for dropdown */
+  }
+  
+  .navbar-nav .dropdown-item {
+    color: white;
+  }
+  
+  .navbar-nav .dropdown-item:hover {
+    background-color: #002240;
+    /* Darker deep blue for dropdown items */
+    color: white;
+  }
+  
+  /* Search and Cart Section */
+  .navbar .form-control {
+    width: 200px;
+    /* Set width for the search bar */
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+  }
+  
+  .navbar .btn-outline-success {
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .navbar .btn-outline-success:hover {
+    background-color: #002240;
+    border: 1px solid #002240;
+  }
+  
+  .navbar .cart-logo {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    background-color: white;
+  }

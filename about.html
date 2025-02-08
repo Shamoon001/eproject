@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="csss/style2.css">
+    <title>Support Page</title>
+</head>
+<body>
+    <header>
+        <h1>Support Page</h1>
+        <p>Providing aid services for your convenience.</p>
+    </header>
+
+    <nav>
+        <ul>
+           
+            <li><a href="#expert-tips">Expert Tips</a></li>
+            <li><a href="#complaints">Register Complaint</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact-form">Contact Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+      
+        <section id="expert-tips">
+            <h2>Expert Tips</h2>
+            <p>Discover valuable tips from our experts:</p>
+            <ul>
+                <li> Make or receive calls inside the kitchen while cooking.</li>
+                <li> Know your knife safety.</li>
+                <li> Handle stovetop pots with care.</li>
+            </ul>
+        </section>
+
+       
+        <section id="complaints">
+            <h2>Register a Complaint</h2>
+            <form id="complaint-form">
+                <label for="complaint">Your Complaint:</label><br>
+                <textarea id="complaint" rows="5" required></textarea><br>
+                <button type="submit">Submit Complaint</button>
+            </form>
+            <p id="complaint-msg" class="hidden">Your complaint has been submitted!</p>
+        </section>
+
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <form id="feedback-form">
+                <label for="feedback">Your Feedback:</label><br>
+                <textarea id="feedback" rows="5" required></textarea><br>
+                <button type="submit">Submit Feedback</button>
+            </form>
+            <p id="feedback-msg" class="hidden">Thank you for your feedback!</p>
+        </section>
+
+        
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contact">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" rows="5" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="contact-msg" class="hidden">Thank you! We will get back to you soon.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Support Services. All rights reserved.</p>
+    </footer>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
